@@ -1,0 +1,10 @@
+{
+  "required" : true,
+  "package": "org.joyman.jfzservermod.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "jfzservermod.refmap.json",
+  "mixins": [
+    "PlayerMixin"
+  ],
+  "minVersion": "0.8"
+}
