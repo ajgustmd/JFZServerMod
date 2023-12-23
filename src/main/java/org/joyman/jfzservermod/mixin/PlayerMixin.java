@@ -20,7 +20,7 @@ import javax.annotation.Nonnull;
 
 @Mixin(ServerPlayer.class)
 public abstract class PlayerMixin extends Player implements IPouchGetter {
-    private static final String TAG_POUCH = JFZServerMod.MODID + ".pouch";
+    private static final String TAG_POUCH = JFZServerMod.MOD_ID + ".pouch";
 
     @Unique
     private Pouch pouch;

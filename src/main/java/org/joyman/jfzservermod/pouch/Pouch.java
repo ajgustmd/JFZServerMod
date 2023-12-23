@@ -6,6 +6,7 @@ import net.minecraft.nbt.Tag;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import org.joyman.jfzservermod.Util;
 
 public class Pouch {
 
@@ -40,7 +41,7 @@ public class Pouch {
             if(inv.getItem(slot) == ItemStack.EMPTY) {
                 inv.setItem(slot, ItemStack.of(tag));
             }
-            else inv.add(ItemStack.of(tag));
+            Util.giveItem(player, ItemStack.of(tag));
         }
     }
 }
